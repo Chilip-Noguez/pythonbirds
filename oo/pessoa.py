@@ -16,6 +16,11 @@ if __name__ == '__main__':
     print(felipe.cumprimentar())
     print(felipe.nome)
     print(felipe.idade)
-
     for filho in felipe.filhos:
         print(filho.nome)
+    felipe.sobrenome = 'Noguez'
+    print(felipe.sobrenome)
+    print(felipe.__dict__)
+    print(pimenta.__dict__)
+    del felipe.filhos
+    print(felipe.__dict__)
